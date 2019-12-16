@@ -1,0 +1,11 @@
+*.h5
+*.txt
+__init__.py
+__pycache__/
+*.csv
+*.zip
+*.gz
+*.pkl
+*.pickle
+*.hdf5
+
