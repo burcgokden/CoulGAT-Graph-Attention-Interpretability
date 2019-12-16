@@ -1,0 +1,4 @@
+numpy==1.16.4
+pandas==0.25.0
+tensorflow-gpu==1.14.0
+pickleshare==0.7.5
