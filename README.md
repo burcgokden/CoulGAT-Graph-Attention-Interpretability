@@ -20,7 +20,7 @@ This repository is the implementation of graph attention framework and attention
 
 **Parameter Dictionary Examples to construct a CoulGAT model:**
 
-A 3-layer Plain CoulGAt model with pooling as last layer:
+A 3-layer Plain CoulGAT model with pooling as last layer:
 
 ```python
 my_param_dict_model_1={
@@ -39,7 +39,7 @@ my_param_dict_model_1={
     'trn_eij_keep_prob': 1.0, #dropout keep probability 2
     'enable_pw': True, #enable learnable power matrix
     'is_classify': False,
-    'early_stop_threshold':None, #start early stopping when loss < this value
+    'early_stop_threshold':None, #start early stopping when epoch count is larger than this value
     'num_early_stop':20, #number of validation points to collect
     'models_folder':'tmp_saved_models', 
     'sum_folder': 'summaries', #for tensorboard events
@@ -51,7 +51,7 @@ my_param_dict_model_1={
     'model_name': 'model_1' #name of model to call
 }
 ```
-A 140 layer CoulGAT resnet without pooling as final layer:
+A 140 layer resnet CoulGAT model without pooling as final layer:
 
 ```python
 my_param_dict_model_2={
@@ -70,7 +70,6 @@ my_param_dict_model_2={
     'trn_eij_keep_prob': 1.0,
     'enable_pw': True,
     'is_classify': False,
-    'use_feed_dict': True,
     'early_stop_threshold':None,
     'num_early_stop':20,
     'models_folder':'tmp_saved_models',
@@ -84,7 +83,7 @@ my_param_dict_model_2={
 }
 ```
 
-A 16-layer resnet model with final pooling at each resnet block:
+A 16-layer resnet CoulGAT model with final pooling at each resnet block:
 
 ```python
 my_param_dict_model_4={
@@ -103,7 +102,6 @@ my_param_dict_model_4={
     'trn_eij_keep_prob': 1.0,
     'enable_pw': True,
     'is_classify': False,
-    'use_feed_dict': True,
     'early_stop_threshold':None,
     'num_early_stop':20,
     'models_folder':'tmp_saved_models',
