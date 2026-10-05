@@ -1,3 +1,13 @@
+## Repository status: archived research reference
+
+This repository is archived and read-only to preserve its role as a reference implementation for the associated research paper and subsequent papers and manuscripts that build on this work.
+
+Preserving the code and documentation provides a stable reference for examining the published methods, reproducing experiments, and comparing later developments with this implementation.
+
+No further updates are planned for this repository. Its contents remain publicly available for study and reuse under the existing license. Further development and adaptations can be carried out in separate forks.
+
+When using this implementation in research, please cite the associated paper and record the specific repository commit used.
+
 ## CoulGAT: A Graph Attention Framework with screened Coulomb Attention Mechanism
 
 This repository is the implementation of graph attention framework and attention mechanism detailed in [CoulGAT: An Experiment on Interpretability of Graph Attention Networks.](https://arxiv.org/abs/1912.08409)
